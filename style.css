@@ -1,0 +1,261 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f3f6ff;
+    /* overflow: hidden; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.curve {
+    width: 53%;
+    position: absolute;
+    right: 0;
+}
+
+#container-start {
+    scroll-behavior: smooth;
+}
+
+/* NAV BAR */
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 100px;
+    font-size: 1em;
+    position: relative;
+    font-weight: 600;
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 2em;
+}
+
+li {
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    height: 5px;
+    margin: 0px;
+    margin-right: 50px;
+    margin-top: 5px;
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms ease;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+nav ul li:hover > ul{
+    opacity: 0.8;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding-left: 5px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: none;
+    display: block;
+    background-color: #fff;
+}
+
+/* HIGHLIGHT ANIMATION */
+
+.highlight a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color: #333;
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+
+
+.highlight a:hover::after {
+    animation: aaa 0.3s 1;
+    left: 0%;
+    width: 100%;
+}
+
+@keyframes aaa{
+    0%{
+        left: 0%;
+        width: 0%;
+    }100%{
+        left: 0%;
+        width: 100%;
+    }
+}
+
+
+/* HagBric title and image */
+
+.landing {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    height: 80vh;
+    
+}
+
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.landing-page h1 {
+    font-size: 5rem;
+    margin: 0;
+    letter-spacing: 5pt;
+    font-weight: 1500;
+}
+
+.landing-page p {
+    font-size: 1.5rem;
+    margin: 12px;
+}
+
+
+aside img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    animation-name: bbb;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bbb {
+    0%{
+        transform: translateY(-20px);
+    } 100% {
+        transform: translateY(0px);
+    }
+}
+
+.gap {
+    height: 30vh;
+}
+
+/* TITLE */
+#title1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+#title1 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-left: 100px;
+    margin-top: 100px; */
+}
+
+#title1 aside h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+    letter-spacing: 5pt;
+    position: relative;
+    width: 100px;
+    font-weight: 600;
+}
+
+#title1 aside p {
+    font-size:1.5em;
+    color: #999;
+}
+
+#title1 h1::after {
+    content: '';
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+    background-color: #87a5d6;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#title1 img {
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* margin-top: 100px; */
+}
+#title2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+#title2 aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#title2 aside h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+    letter-spacing: 5pt;
+    position: relative;
+    width: 100px;
+}
+
+#title2 aside p {
+    font-size:1.5em;
+    color: #999;
+}
+
+#title2 aside h1::after {
+    content: '';
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+    background-color: #87a5d6;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#title2 img {
+    width: 80%;
+    margin-left: auto;
+    /* margin-top: 100px; */
+}
