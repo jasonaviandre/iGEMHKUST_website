@@ -1,17 +1,17 @@
-const nav = document.querySelector(".nav-bar");
+const nav = document.querySelector(".nav-btn");
 const body = document.querySelector("header");
 
 const options = {
-    rootMargin: "-600px 0px 0px 0px"
+    rootMargin: "-40px 0px 0px 0px"
 };
 
 const headerObserver = new IntersectionObserver(function(entries, headerObserver) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
-            nav.classList.add("sticky");
+            nav.classList.add("whiteBg");
             console.log("test");
         } else {
-            nav.classList.remove("sticky");
+            nav.classList.remove("whiteBg");
         }
     });
 }, options);
