@@ -566,7 +566,7 @@ aside img {
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(3, 1fr);
-    margin: 100px;
+    /* margin: 100px; */
 }
 @media (max-width: 1396px) {
     .grid-wrapper {
