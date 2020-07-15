@@ -565,6 +565,10 @@ aside img {
     .zone {
         margin: 0;
     }
+
+    .grid-wrapper {
+        padding: 10px;
+    }
 }
 
 .grid-wrapper {
@@ -579,9 +583,10 @@ aside img {
     }
 }
 
-@media (max-width: 968px) {
+@media (max-width: 800px) {
     .grid-wrapper {
         grid-template-columns: repeat(1, 1fr);
+        margin: 30px;
     }
 }
 
