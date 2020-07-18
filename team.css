@@ -344,6 +344,7 @@ header {
 .title {
     position: relative;
     letter-spacing: 2pt;
+    text-align: center;
 }
 
 .title::after {
@@ -377,7 +378,7 @@ section {
 
 .container2 .card {
     position: relative;
-    max-width: 300px;
+    width: 300px;
     height: 215px;
     background: #fff;
     margin: 30px 10px;
@@ -388,9 +389,6 @@ section {
     transition: .3s ease-in-out;
 }
 
-.container2 .card:hover {
-    height: 420px;
-}
 
 .container2 .card .imgBox {
     position: relative;
@@ -401,11 +399,13 @@ section {
     z-index: 1;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
-
 .container2 .card .imgBox img {
     width: 260px;
     height: 260px;
 }
+
+
+
 
 .container2 .card .content {
     position: relative;
@@ -418,9 +418,37 @@ section {
     transition: .3s ease-in-out;
 }
 
-.container2 .card:hover .content {
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: .3s;
+@media (max-width: 410px) {
+    /* .container2 .card .imgBox {
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+
+    }
+
+    .container2 .card .imgBox img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+    } */
+
+
+
+
 }
+
+
+.container2 .card:hover .content {
+visibility: visible;
+opacity: 1;
+margin-top: -40px;
+transition-delay: .3s;
+}
+
+.container2 .card:hover {
+    height: 420px;
+}
+
