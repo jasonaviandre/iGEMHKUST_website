@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: initial;
 }
 
 body {
@@ -42,11 +42,12 @@ header {
     height: 3rem;
 }
 
-.container {
+.container1 {
     max-width: 100%;
     padding: 0 2rem;
     height: 3rem;
     margin: 0;
+    margin-top: 20px;
     display: flex;
     position: relative;
     transition: 0.5s;
@@ -58,9 +59,17 @@ header {
     align-items: center;
 }
 
-.logo a{
-    text-decoration: none;
-    color: #333;
+.logo img{
+    height: 100px;
+    width: 100px;
+    transition: 0.5s;
+}
+
+.logo img.logoSmall {
+    height: 80px;
+    width: 80px;
+    transition: 0.5s;
+    padding-top: 8px;
 }
 .nav-btn {
     flex: 3;
@@ -274,7 +283,7 @@ header {
         transform: initial;
         opacity: 1;
         pointer-events: auto;
-        width: 100%;
+        width: 120%;
         padding: 0;
         background-color: #3183ac;
         display: none;
@@ -338,6 +347,8 @@ header {
 .whiteBg {
     background-color: white;
     transition: 0.5s;
+    height: 60px;
+    margin-top: 0;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
