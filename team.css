@@ -4,7 +4,7 @@ body {
 
 /* TEAM MEMBER */
 .heading-team {
-    background: url('image/Asset\ 26.png');
+    background: url('image/Asset\ 27.png');
     height: 100vh;
     width: 100%;
     
@@ -123,3 +123,31 @@ transition-delay: .3s;
     height: 420px;
 }
 
+@media (max-width: 1250px) {
+    .heading-team {
+        background: rgb(160,185,255);
+        background: linear-gradient(125deg, rgba(160,185,255,1) 0%, rgba(131,228,247,1) 100%);
+    }
+
+    .heading-team h1 {
+        justify-content: center;
+        padding-left: 0;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .nav-link > a {
+        color: #333;
+    }
+
+    .nav-btn {
+        top: 0px;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .navigation {
+        display: none;
+    }
+}
