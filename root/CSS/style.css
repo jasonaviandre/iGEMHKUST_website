@@ -72,6 +72,13 @@ header {
     transition: 0.5s;
 }
 
+@media (max-width: 500px) {
+    .logo img {
+        height: 60px;
+        width: 60px;
+    }
+}
+
 .logo img.logoSmall {
     height: 60px;
     width: 60px;
@@ -479,6 +486,7 @@ aside img {
     letter-spacing: 3pt;
     position: relative;
     font-weight: 600;
+    width: 300px;
 }
 .par {
     font-size:1.5em;
